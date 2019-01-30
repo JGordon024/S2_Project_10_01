@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 1
+
+   Rhetoric in the United States Styles for Media
+   Author: Jacob Gordon
+   Date:   1/29/19
+
+   Filename: ws_media.css
+
+*/
+
+/* VideoPlayer Styles */
+video {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+}
+
+/* Screen widths that are 521 pixels and larger are having the video's width being set to 360 pixels, floated right so that its on the right of the element it's nested in, and has a margin of 10 pixels  */
+@media only screen and (min-width: 521px) {
+    video {
+        width: 360px;
+        float: right;
+        margin: 10px;
+    }
+}
+
+/* Track Styles */
+
+/* Effects the captions so that the text is a light pink and has a light grey background that is slightly faded and has a larger text with sans-serif font family */
+::cue {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(221, 128, 160);
+    font: 1.3em sans-serif;
+}
