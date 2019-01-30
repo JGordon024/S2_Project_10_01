@@ -44,9 +44,11 @@
       <section>
             <article>
                   <h1>John F. Kennedy Inaugural Address</h1>
+                  <!-- Put in video of Kennedy's Address, set the poster attribute so that when loading the page, a certain image loads -->
                   <video controls poster="ws_jfk_poster.png">
                         <source src="ws_jfk_speech.mp4" type="video/mp4" />
                         <source src="ws_jfk_speech.webm" type="video/webm" />
+                        <!-- Adds captions for the video, using a .vtt file I created with the time stamps for each caption -->
                         <track src="captions.vtt" kind="captions" label="Speech Captions" default>
                         <p>To play this video clip, your browser needs to support HTML5.</p>
                   </video>
